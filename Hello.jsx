@@ -1,9 +1,10 @@
-import React from "React";
+import React from "react";
 
-function Hello(){
+function Hello({data}){
     return(
         <div>
-            <h1>comming soon</h1>
+            <h2>name :{data.name}</h2>
+            <h3>age :{data.age}</h3>
         </div>
     );
 }

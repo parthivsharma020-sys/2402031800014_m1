@@ -1,16 +1,15 @@
 
-import react ,{useState} from "react";
+import react ,{useContext, useState} from "react";
 import Nav2 from "./Nav2.jsx";
+import { ThemeDataContext } from "../Context/ThemeContext.jsx";
 
-const Navbar=(props)=>{
-    // function changetheme(){
-    //     props.setTheme("light");
-    // }
-    return(
+const Navbar=()=>{   
+    const [theme]=useContext(ThemeDataContext)
+        return(
         <>
-        <div className="nav">
+        <div className={theme}>
             <h2>parthiv</h2>
-            <Nav2 theme={props.theme}/>
+            <Nav2 />
         </div>
         </>
     )
