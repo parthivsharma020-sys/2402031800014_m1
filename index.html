@@ -1,13 +1,83 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>practice_pro</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>jquery demo    </h2>
+    <p id="p1"> para 1Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quas voluptatum odit repellendus aut itaque iste, accusantium similique, adipisci labore voluptas ullam doloremque inventore eaque facilis eligendi voluptates, ab neque?</p>
+    <p id="p2"> para 2  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium veritatis totam fugiat suscipit sint culpa tenetur voluptatum excepturi rem facilis alias at molestiae, minima eveniet amet expedita aspernatur quos beatae?</p>
+    <p id="p3"></p>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="fi">fade in</button>
+    <button id="fo">fade out</button>
+    <button id="tg">toggle</button>
+    <hr>
+    <textarea id="txt"></textarea>
+    <button id="btn">SUBMIT</button>
+    <p id="para"></p>
+    <hr>
+    <h3> frequently asked question    &nbsp; <button id="pl">+</button></h3>
+    <div id="qa">
+        <h4>how to get access of game?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quod dignissimos ipsum quibusdam veniam labore quia vero non! Blanditiis numquam alias enim aut. Architecto repudiandae laborum rem exercitationem numquam ad.</p>
+        <h4>have to get Refund?</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, id. Deserunt itaque autem facere laboriosam porro et dolor, provident ipsum quasi excepturi, soluta mollitia repudiandae! Aliquam sint quis saepe maxime!</p>
+        <h4>How to reffer?</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Obcaecati recusandae praesentium aspernatur! Provident aliquam nihil culpa, sunt nostrum impedit nam, veritatis nisi numquam laboriosam aperiam a cum nulla voluptatem nemo?</p>
+        
+    </div>
+
+    <hr>
+    <div>
+        <div class="sld"><img src="https://images.unsplash.com/photo-1780053643403-d1fcec304648?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyfHx8ZW58MHx8fHx8" alt=""></div>
+         <div class="sld"><img src="https://images.unsplash.com/photo-1780050303562-81dde6aaf1df?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+         <div class="sld"><img src="https://media.istockphoto.com/id/2202400936/photo/shadows-in-the-subway.webp?a=1&b=1&s=612x612&w=0&k=20&c=mrwauN0m2YQwJcCqpQGyBaBzRhQwGg97kssq19_CiN0=" alt=""></div>
+         <div class="sld"><img src="" alt=""></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $("#btn").click(function (){
+let ch=$("#txt").val();
+    // $("#para").text(ch);
+    $("#para").html("<b>your Age is <b/>"+ch);
+    })
+    $("#para").css("color","magenta");
+    $("h2").css({
+        color:"red",
+        background:"black"
+    });
+    $("#hide").click(function(){
+        $("#p2").hide();
+    });
+    $("#show").click(function(){
+            $("#p2").show();
+    });
+    $("#tg").click(function(){
+            $("#p2").toggle();
+    });
+    $("#fi").click(function(){
+            $("#p2").fadeIn(1000);
+    });
+    $("#fo").click(function(){
+            $("#p2").fadeOut(1000);
+    });
+
+    });
+
+ $("#pl").click(function(){
+            $("#qa").toggle(1000);
+    });
+
+
+// $(document).ready(
+//     function(){
+//         alert("page reloaded");
+//     })
+</script>
+</body>
 </html>
